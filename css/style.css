@@ -94,7 +94,7 @@ h6 {
 }
 
 #signin .logo {
-  margin-bottom: 8vh;
+  margin-bottom: 6vh;
 }
 
 #signin .logo img {
@@ -184,11 +184,11 @@ h6 {
   text-align: center;
   font-size: 0.8rem;
   max-width: 80%;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 #main-footer div {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 #main-footer a {
@@ -198,8 +198,8 @@ h6 {
 
 /* Media Queries */
 
-/* Smartphones */
-@media only screen and (max-width: 500px) {
+/* Extra Small Smartphones */
+@media only screen and (max-width: 375px) {
   body {
     overflow: auto;
   }
@@ -214,7 +214,7 @@ h6 {
   }
 
   #signin .logo {
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
   }
 
   #signin .logo img {
@@ -226,7 +226,7 @@ h6 {
   }
 
   .links {
-    margin-top: -1.4rem;
+    margin-top: -1.2rem;
   }
 
   #signin .secondary-btn,
@@ -236,12 +236,12 @@ h6 {
   }
 
   #main-footer {
-    padding-top: 0.6rem;
+    padding-top: 1rem;
   }
 }
 
 /* Tablet */
-@media (min-width: 501px) and (max-width: 823px) {
+@media (min-width: 376px) and (max-width: 767px) {
   body {
     /* display: none; */
     overflow: auto;
@@ -253,11 +253,13 @@ h6 {
 
   #left {
     justify-content: start;
-    margin-top: 10vh;
+    align-items: center;
+    height: 100vh;
+    margin-top: 8vh;
   }
 
   #signin .logo {
-    margin-bottom: 8vh;
+    margin-bottom: 4vh;
   }
 
   #signin .logo img {
@@ -284,7 +286,47 @@ h6 {
 }
 
 /* Normal */
-@media (min-width: 824px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+  #right {
+    flex: 1;
+  }
+
+  #left {
+    flex: 1;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20vh;
+  }
+
+  #signin .logo {
+    margin-bottom: 4vh;
+  }
+
+  #signin .logo img {
+    width: 280px;
+  }
+
+  #signin .text-input {
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    margin-top: 1rem;
+  }
+
+  #signin .secondary-btn,
+  .or,
+  .links {
+    width: 65%;
+  }
+
+  #showcase .showcase-text {
+    font-size: 2.5rem;
+  }
+
+  #main-footer {
+    padding-top: 3rem;
+  }
 }
 
 /* Widescreen */
@@ -296,8 +338,4 @@ h6 {
   #right {
     flex: 6;
   }
-}
-
-/* Landscape */
-@media (max-height: 500px) {
 }
